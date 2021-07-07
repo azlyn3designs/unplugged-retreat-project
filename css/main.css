@@ -87,6 +87,193 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Base Styles */
+
+body {
+    margin: 0;
+    max-width: 1200px;
+    width: 100%;
+}
+
+header, footer {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.content-wrapper {
+    margin: 1.25em;
+}
+
+
+/* ===================================================
+            HEADER SECTION w/NAVIGATION MENU
+   =================================================== */
+
+header .content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+header .logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ================================
+         Navigation Menu
+   ================================ */
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 3.125em;
+    margin-left: 1em;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* ==================================================
+            MAIN SECTION for EACH WEBPAGE
+   ================================================== */
+
+/* =================================
+       HOME - Index Page
+   ================================= */
+
+/* Hero-Area Section */
+
+.hero-area {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+/* Newsletter Signup Form */
+
+aside {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.newsletter-signup {
+    align-items: stretch;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    line-height: .5em;
+}
+
+.email-textbox {
+    line-height: 3.125em;
+    padding-left: 1.25em;
+}
+
+.submit-button {
+    line-height: 3.125em;
+    text-transform: uppercase;
+}
+
+
+/* Unplugged Retreat Amenities */
+
+.features h2 {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.features-items {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/* Previous Guest Reviews */
+
+.reviews {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+
+
+/* ================================
+        FAQ - Index Page
+   ================================ */
+
+.faq, .faq .content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+
+
+/* ================================
+       ABOUT - Index Page
+   ================================ */
+
+.mission, .contact-section {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+
+
+/* ===================================================
+                  FOOTER SECTION
+   =================================================== */
+
+.contact, .social {
+    text-align: center;
+}
+
+
+/* Social Media Icons/Links */
+
+.social-icons {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
