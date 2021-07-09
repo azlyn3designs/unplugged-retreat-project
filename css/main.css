@@ -90,7 +90,7 @@ textarea {
 /* Base Styles */
 
 body {
-    margin: 0;
+    margin: 0 auto;
     max-width: 1200px;
     width: 100%;
 }
@@ -102,9 +102,6 @@ header, footer {
     justify-content: center;
 }
 
-.content-wrapper {
-    margin: 1.25em;
-}
 
 
 /* ===================================================
@@ -115,7 +112,6 @@ header .content-wrapper {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    width: 100%;
 }
 
 header .logo {
@@ -124,7 +120,10 @@ header .logo {
     justify-content: center;
 }
 
-
+a {
+    text-decoration: none;
+    color: black;
+}
 
 /* ================================
          Navigation Menu
@@ -134,7 +133,7 @@ nav {
     align-items: center;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 nav ul {
@@ -144,15 +143,12 @@ nav ul {
 }
 
 nav ul li {
+    font-size: 1.29em;
+    font-weight: 700;
+    line-height: .25em;
     list-style-type: none;
-    margin-right: 3.125em;
-    margin-left: 1em;
+    margin: 0 2.75em 0 .7em;
     text-transform: uppercase;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
 }
 
 
@@ -168,10 +164,12 @@ nav ul li a {
 /* Hero-Area Section */
 
 .hero-area {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
     justify-content: flex-start;
 }
+
+
 
 
 /* Newsletter Signup Form */
@@ -183,40 +181,53 @@ aside {
     justify-content: flex-start;
 }
 
+
+/* Email Signup Form */
 .newsletter-signup {
     align-items: stretch;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    line-height: .5em;
+    line-height: .75em;
 }
 
+/* Newsletter Form Email Address Input Field */
 .email-textbox {
-    line-height: 3.125em;
-    padding-left: 1.25em;
+    font-style: italic;
 }
 
+
+/* Newsletter Form Submit Button */
 .submit-button {
-    line-height: 3.125em;
     text-transform: uppercase;
 }
 
 
+
 /* Unplugged Retreat Amenities */
 
-.features h2 {
+.features {
     align-items: center;
     display: flex;
+    flex-flow: row wrap;
     justify-content: flex-start;
+}
+
+.features .content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .features-items {
     align-items: center;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     text-align: center;
 }
+
 
 
 /* Previous Guest Reviews */
@@ -256,6 +267,7 @@ aside {
 
 
 
+
 /* ===================================================
                   FOOTER SECTION
    =================================================== */
@@ -273,6 +285,8 @@ aside {
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
+
 
 /* ==========================================================================
    Helper classes
