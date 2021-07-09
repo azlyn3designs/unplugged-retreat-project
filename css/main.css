@@ -90,8 +90,17 @@ textarea {
 /* Base Styles */
 
 body {
+    background-color: #202322;
+    color: #e2e3ed;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
     margin: 0 auto;
     max-width: 1200px;
+    width: 100%;
+}
+
+hr {
     width: 100%;
 }
 
@@ -100,6 +109,49 @@ header, footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+.content-wrapper {
+    width: 100%;
+}
+
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.6em;
+    line-height: 1.3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 1.3em;
+}
+
+address {
+    color: #ffffff;
+    font-style: normal;
+    padding-bottom: 1em;
+}
+
+a {
+    color: #e2e3ed;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #91c59b;
 }
 
 
@@ -111,7 +163,9 @@ header, footer {
 header .content-wrapper {
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
+    justify-content: flex-end;
+    margin: 15px 0;
+    width: 100%;
 }
 
 header .logo {
@@ -120,10 +174,7 @@ header .logo {
     justify-content: center;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+
 
 /* ================================
          Navigation Menu
@@ -132,22 +183,24 @@ a {
 nav {
     align-items: center;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
+    width: 100%;
 }
 
 nav ul {
     align-items: center;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 nav ul li {
-    font-size: 1.29em;
+    font-size: 1.3em;
     font-weight: 700;
-    line-height: .25em;
+    line-height: .3em;
     list-style-type: none;
-    margin: 0 2.75em 0 .7em;
+    margin: 0 42px 0 18px;
     text-transform: uppercase;
 }
 
@@ -165,10 +218,18 @@ nav ul li {
 
 .hero-area {
     align-items: flex-start;
+    background-image: url('../img/jake-melara-30679-unsplash@2x.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    min-height: 600px;
     justify-content: flex-start;
 }
 
+.hero-area .content-wrapper {
+    margin: 20px 20px 0 20px;
+}
 
 
 
@@ -176,11 +237,20 @@ nav ul li {
 
 aside {
     align-items: center;
+    background-color: #527158;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
 }
 
+aside .content-wrapper {
+    margin: 25px 20px 50px 20px;
+}
+
+/* Newsletter Form Description */
+.form-description {
+    padding-bottom: 15px;
+}
 
 /* Email Signup Form */
 .newsletter-signup {
@@ -188,18 +258,35 @@ aside {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    line-height: .75em;
+    line-height: 15px;
 }
 
 /* Newsletter Form Email Address Input Field */
 .email-textbox {
+    background-color: #e1e2ea;
+    border: none;
+    color: #b5b6bd;
     font-style: italic;
+    padding: 20px;
 }
 
 
 /* Newsletter Form Submit Button */
 .submit-button {
+    background-color: #2a423a;
+    border: none;
+    color: #e2e3ed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+    padding: 20px;
     text-transform: uppercase;
+    transition-duration: .5s;
+}
+
+.submit-button:hover {
+    background-color: #003333;
+    cursor: pointer;
 }
 
 
@@ -208,9 +295,19 @@ aside {
 
 .features {
     align-items: center;
+    background-image: url('../img/rawpixel-800820-unsplash@2x.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+
+}
+
+.features h2 {
+    margin-left: 20px;
+    width: 88%;
 }
 
 .features .content-wrapper {
@@ -218,6 +315,7 @@ aside {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    margin: 50px 20px;
 }
 
 .features-items {
@@ -228,15 +326,48 @@ aside {
     text-align: center;
 }
 
+.features article {
+    width: 56%;
+}
 
+.fontawesome-icon {
+    padding: 25px 0;
+}
+
+.features-item-description {
+    color: #e1e2ea;
+    line-height: 1.3em;
+}
 
 /* Previous Guest Reviews */
 
 .reviews {
     align-items: center;
+    background-color: #2a423a;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+}
+
+.reviews .content-wrapper {
+    margin: 50px 20px 40px 20px;
+}
+
+.reviews h2 {
+    line-height: 1.2em;
+    width: 90%;
+}
+
+.reviews img {
+    width: 100%;
+}
+
+.reviews article {
+    width: 100%;
+}
+
+.reviews p {
+    line-height: 1.3em;
 }
 
 
@@ -245,11 +376,41 @@ aside {
         FAQ - Index Page
    ================================ */
 
-.faq, .faq .content-wrapper {
+.faq {
     align-items: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+}
+
+.faq .content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.faq-responses {
+    background-color: #527158;
+}
+
+.faq-responses h2 {
+    line-height: 1.2em;
+    margin-left: 20px;
+}
+
+.faq .content-wrapper article {
+    margin: 0 20px;
+}
+
+.faq-content h3 {
+    line-height: 1.3em;
+}
+
+.faq-content p {
+    line-height: 1.5em;
 }
 
 
@@ -265,12 +426,61 @@ aside {
     justify-content: flex-start;
 }
 
+.mission {
+    background-color: #527158;
+
+}
+
+.mission .content-wrapper {
+    margin: 50px 20px;
+    width: 100%;
+}
+
+.mission-content h2 {
+    line-height: 1.2em;
+}
+
+.mission p {
+    line-height: 1.3em;
+}
+
+.map .content-wrapper {
+    width: 100%;
+}
+
+.contact-section {
+    background-color: #2a423a;
+    padding-bottom: 1.5em;
+}
+
+.contact-section .content-wrapper {
+    margin: 50px 20px;
+    width: 100%;
+}
+
+.contact-section h2 {
+    line-height: 1.2em;
+}
+
+.contact-section h3 {
+    color: #ffffff;
+    line-height: 1em;
+}
+
+.contact-section p {
+    color: #e1e2ea;
+}
 
 
 
 /* ===================================================
                   FOOTER SECTION
    =================================================== */
+
+footer .content-wrapper {
+    margin-top: 50px;
+    width: 55%;
+}
 
 .contact, .social {
     text-align: center;
@@ -286,7 +496,12 @@ aside {
     justify-content: space-between;
 }
 
+/* Copyright */
 
+.copyright {
+    color: #ffffff;
+    text-align: center;
+}
 
 /* ==========================================================================
    Helper classes
