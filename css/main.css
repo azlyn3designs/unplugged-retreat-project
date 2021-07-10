@@ -100,8 +100,8 @@ body {
     width: 100%;
 }
 
-hr {
-    width: 100%;
+.content-wrapper {
+    width: 90%;
 }
 
 header, footer {
@@ -111,11 +111,6 @@ header, footer {
     justify-content: center;
 }
 
-.content-wrapper {
-    width: 100%;
-}
-
-
 h1, h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -123,7 +118,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 2.6em;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 
 h2 {
@@ -160,18 +155,24 @@ a:hover {
             HEADER SECTION w/NAVIGATION MENU
    =================================================== */
 
-header .content-wrapper {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-    margin: 15px 0;
+header {
+    padding: 15px 0;
+}
+
+.header-divider {
+    background-color: #3a3a3a;
+    height: 1px;
+    margin: 10px 0 20px 0;
     width: 100%;
 }
 
-header .logo {
+header .content-wrapper {
     align-items: center;
     display: flex;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 15px 0;
+    width: 100%;
 }
 
 
@@ -185,13 +186,13 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    width: 100%;
+    margin: 0;
+    width: 60%;
 }
 
 nav ul {
-    align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -200,51 +201,98 @@ nav ul li {
     font-weight: 700;
     line-height: .3em;
     list-style-type: none;
-    margin: 0 42px 0 18px;
+    margin: 0 47px 0 10px;
     text-transform: uppercase;
+}
+
+
+
+/* ===================================================
+                  FOOTER SECTION
+   =================================================== */
+
+footer {
+    flex-direction: column;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .content-wrapper {
+    margin: 50px 0 0 0;
+    text-align: center;
+    width: 55%;
+}
+
+footer .contact {
+    margin-bottom: 50px;
+}
+
+
+/* Social Media Icons/Links */
+
+.social-icons {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons p {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* Copyright */
+
+.copyright {
+    color: #ffffff;
+    margin: 20px 0;
 }
 
 
 
 /* ==================================================
             MAIN SECTION for EACH WEBPAGE
+            ------- MOBILE STYLING-------
    ================================================== */
 
 /* =================================
-       HOME - Index Page
+               HOMEPAGE
    ================================= */
 
 /* Hero-Area Section */
 
 .hero-area {
-    align-items: flex-start;
     background-image: url('../img/jake-melara-30679-unsplash@2x.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-flow: row wrap;
     min-height: 600px;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .hero-area .content-wrapper {
-    margin: 20px 20px 0 20px;
+    margin: 25px 0;
 }
 
 
 
-/* Newsletter Signup Form */
+/* ===== ASIDE SECTION ===== */
 
+/* Newsletter Signup Form */
 aside {
-    align-items: center;
     background-color: #527158;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 aside .content-wrapper {
-    margin: 25px 20px 50px 20px;
+    margin-bottom: 50px;
 }
 
 /* Newsletter Form Description */
@@ -291,31 +339,27 @@ aside .content-wrapper {
 
 
 
-/* Unplugged Retreat Amenities */
+/* ===== FEATURES SECTION ===== */
 
+/* Unplugged Retreat Amenities */
 .features {
-    align-items: center;
     background-image: url('../img/rawpixel-800820-unsplash@2x.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
 
-}
-
-.features h2 {
-    margin-left: 20px;
-    width: 88%;
 }
 
 .features .content-wrapper {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 50px 20px;
+    margin: 50px 0;
+}
+
+.features h2 {
+    margin-bottom: 30px;
+    width: 90%;
 }
 
 .features-items {
@@ -323,11 +367,16 @@ aside .content-wrapper {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    text-align: center;
 }
 
 .features article {
-    width: 56%;
+    margin: 30px 0;
+    text-align: center;
+    width: 63%;
+}
+
+.feature p {
+    margin: 0;
 }
 
 .fontawesome-icon {
@@ -339,10 +388,11 @@ aside .content-wrapper {
     line-height: 1.3em;
 }
 
-/* Previous Guest Reviews */
 
+/* ===== REVIEWS SECTION ===== */
+
+/* Previous Guest Reviews */
 .reviews {
-    align-items: center;
     background-color: #2a423a;
     display: flex;
     flex-flow: row wrap;
@@ -350,19 +400,22 @@ aside .content-wrapper {
 }
 
 .reviews .content-wrapper {
-    margin: 50px 20px 40px 20px;
+    margin: 50px 20px 42px 20px;
+    width: 100%;
 }
 
 .reviews h2 {
     line-height: 1.2em;
-    width: 90%;
+    margin-bottom: 40px;
+    width: 85%;
+}
+
+.reviews h3 {
+    margin: 20px 0;
+    width: 55%;
 }
 
 .reviews img {
-    width: 100%;
-}
-
-.reviews article {
     width: 100%;
 }
 
@@ -473,35 +526,7 @@ aside .content-wrapper {
 
 
 
-/* ===================================================
-                  FOOTER SECTION
-   =================================================== */
 
-footer .content-wrapper {
-    margin-top: 50px;
-    width: 55%;
-}
-
-.contact, .social {
-    text-align: center;
-}
-
-
-/* Social Media Icons/Links */
-
-.social-icons {
-    align-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-/* Copyright */
-
-.copyright {
-    color: #ffffff;
-    text-align: center;
-}
 
 /* ==========================================================================
    Helper classes
