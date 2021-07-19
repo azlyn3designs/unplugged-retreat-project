@@ -326,36 +326,40 @@ aside p {
 
 /* Email Signup Form */
 .newsletter-signup {
-    align-items: stretch;
+    align-items: flex-start;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
 /* Newsletter Form Email Address Input Field */
-#email {
+input[type=email] {
     background-color: #e1e2ea;
     border: none;
-    color: #b5b6bd;
+    box-sizing: border-box;
+    color: #2a423a;
     font-style: italic;
-    padding: 20px;
+    padding: 1.3em;
+    width: 100%;
 }
 
 
 /* Newsletter Form Submit Button */
-.submit-button {
+input[type=button] {
     background-color: #2a423a;
     border: none;
     color: #e2e3ed;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-size: 1.1em;
     font-weight: 500;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 20px 0;
     text-transform: uppercase;
     transition-duration: .5s;
+    width: 100%;
 }
 
-.submit-button:hover {
+input[type=button]:hover {
     background-color: #003333;
     cursor: pointer;
 }
@@ -695,7 +699,7 @@ aside p {
         width: 45%;
     }
 
-    .submit-button {
+    input[type=button] {
         font-size: 1.3em;
     }
 
@@ -948,11 +952,11 @@ aside p {
         width: 38%;
     }
 
-    #email {
+    input[type=email] {
         font-size: 1.1em;
     }
 
-    .submit-button {
+    input[type=button] {
         font-size: 1.5em;
     }
 
