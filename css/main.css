@@ -270,6 +270,18 @@ footer address {
     justify-content: center;
 }
 
+.social-icons i {
+    align-items: center;
+    background: #527158;
+    border-radius: 50%;
+    color: #e2e3ed;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px;
+
+}
+
 .social-icons p {
     align-items: center;
     display: flex;
@@ -419,6 +431,7 @@ input[type=button]:hover {
 }
 
 .features i {
+    color: #e2e3ed;
     font-size: 3.75em;
     margin: 50px 0 30px 0;
 }
