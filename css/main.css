@@ -278,8 +278,13 @@ footer address {
     display: flex;
     height: 40px;
     justify-content: center;
+    transition-duration: .5s;
     width: 40px;
 
+}
+
+.social-icons i:hover {
+    background: #003333;
 }
 
 .social-icons p {
