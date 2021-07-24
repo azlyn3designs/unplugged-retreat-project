@@ -375,7 +375,7 @@ input[type=email] {
 
 
 /* Newsletter Form Submit Button */
-input[type=button] {
+input[type=submit] {
     background-color: #2a423a;
     border: none;
     color: #e2e3ed;
@@ -389,7 +389,7 @@ input[type=button] {
     width: 100%;
 }
 
-input[type=button]:hover {
+input[type=submit]:hover {
     background-color: #003333;
     cursor: pointer;
 }
@@ -680,7 +680,7 @@ input[type=button]:hover {
         font-size: 1.5em;
     }
 
-    input[type=button] {
+    input[type=submit] {
         font-size: 1.1em;
     }
 
@@ -939,7 +939,7 @@ input[type=button]:hover {
         font-size: 1.1em;
     }
 
-    input[type=button] {
+    input[type=submit] {
         font-size: 1.5em;
     }
 
@@ -994,6 +994,7 @@ input[type=button]:hover {
     .form-description p {
         width: 82%;
     }
+    
 
     /* ----- FEATURES ----- */
 
